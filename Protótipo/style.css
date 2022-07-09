@@ -164,7 +164,7 @@ nav {
     color: var(--corTerciaria);
 }
 .formPacote {
-    width: 50%;
+    width: 40%;
     height: auto;
     padding: 5px;
     display: flex;
@@ -178,12 +178,23 @@ nav {
     padding: 5px;
     margin: 10px 5px 10px 0;
 }
+.local {
+    width: 100%;
+    display: flex;
+}
 .info {
+    width: 100%;
     margin-bottom: 5px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+
 }
 .adicionais {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    
 }
 footer {
     width: 100%;
@@ -200,4 +211,15 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+.redesSociais {
+    margin: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.iconsRedes {
+    width: 20px;
+    height: 20px;
 }
