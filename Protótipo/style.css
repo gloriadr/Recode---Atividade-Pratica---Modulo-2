@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,200;0,300;0,400;0,700;1,100&display=swap');
+:root {
+    --bordaGradiente: linear-gradient(90deg,rgba(255,255,255,1),rgba(227,102,52,89), rgba(255,255,255,1)) 1;
+    --bordaGradienteVerde: linear-gradient(90deg,rgba(255,255,255,1),rgba(52, 227, 199, 89), rgba(255,255,255,1)) 1;
+    --corPrimaria: #E6E216;
+    --corSecundaria: #E36634;
+    --corTerciaria : #E3774B;
+    --corQuartenaria: #34E3C7;
+    --fontePrimaria:'Overpass', sans-serif;
+    --bordas: 1.5px solid 
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fontePrimaria);
+}
+header {
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: var(--bordas);
+    border-image: var(--bordaGradiente);
+    background-color: #ffff;
+    z-index: 1;
+}
+.logo {
+    color: var(--corPrimaria);
+    font-family: var(--fontePrimaria);
+    font-weight: 900;
+    font-size: 2rem;
+    cursor: pointer;
+}
+nav {
+    height: 100%;
+}
+.navbar-nav {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    gap: 30px; 
+    padding: 5px;
+    margin-bottom: 2px;
+}
+.navbar-nav .nav-link {
+    color: var(--corSecundaria);
+    font-weight: 500;
+    font-family: var(--fontePrimaria);
+}
+.navbar-nav .nav-link:hover {
+    color: var(--corPrimaria);
+    border-bottom: var(--bordas);
+    border-image: var(--bordaGradiente);
+    
+}
+
+/*Carousel*/
+.carouselSection {
+    width: 100%;
+    max-height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 200px;
+    border: solid 1px;
+    border-image: var(--bordaGradienteVerde);
+}
+.textoInicial {
+   width: 40%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.titulo {
+    text-align: center;
+    color: var(--corTerciaria);
+}
+.textoSuporte {
+    text-align: center;
+    color: var(--corQuartenaria);
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+.carousel  {
+    width: 50%;
+    max-height: 60%;
+    min-height: 60%;
+   
+}
+.imgCarousel {
+    width: 100%;
+    height: 100%;
+}
+
+/*Cards de praias*/
+.cardsSection {
+    margin-top: 95px;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card {
+    border: solid 5px;
+    border-image: var(--bordaGradiente);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card:hover {
+    border: solid 5px;
+    border-image: var(--bordaGradienteVerde);
+}
+.card-title {
+    font-weight: 600;
+    text-align: center;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 70%;
+    min-height: 70%;
+}
+.card-img-top {
+    min-height: 30%;
+    max-height: 30%;
+}
+.montarPacotes {
+    margin-top: 180px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.textodeApoioMontarPacotes {
+    width: 40%;
+}
+.textodeApoioMontarPacotes h2,p {
+    text-align: center;
+}
+.textodeApoioMontarPacotes h2 {
+    color: var(--corTerciaria);
+}
+.textodeApoioMontarPacotes p {
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: var(--corQuartenaria);
+}
+.spanZero {
+    font-weight: 1000;
+    color: var(--corTerciaria);
+}
+.formPacote {
+    width: 50%;
+    height: auto;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.formPacote input {
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px 5px 10px 0;
+}
+.info {
+    margin-bottom: 5px;
+}
+.adicionais {
+    display: flex;
+    flex-direction: column;
+}
+footer {
+    width: 100%;
+    height: 20%;
+    margin: 70px 0 0 0;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--corTerciaria);
+}
+.linksUteis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

@@ -4,18 +4,205 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>    
+<link rel="stylesheet" href="style.css">
+
+<title>SOLAR</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-        <nav>
-
+    <!--Cabeçalho-->
+    <header class="container-fluid">
+        <div class="logo">SOLAR</div>
+        <nav class="navbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link linkItem" href="#">HOME</a></li>
+                <!--Dropdown destinos-->
+                <li class="nav-item"><a class="nav-link" href="promocoes.html">PROMOÇÕES</a></li>
+                <li class="nav-item"><a class="nav-link" href="#formPacote">DESTINO</a></li>
+                <li class="nav-item"><a class="nav-link" href="contatos.html">CONTATO</a></li>
+                <li class="nav-item"><a class="nav-link" href="LogIn.html">LOGIN</a></li>
+            </ul>
         </nav>
     </header>
-    <main>
-        
+    <main class="container-fluid">
+        <!--carousel-->
+        <section class="carouselSection">
+            <div class="textoInicial">
+                <h1 class="titulo">Venha conhecer as mais belas praias do país</h1>
+                <p class="textoSuporte">Divirta-se sem se preocupar com nada!</p>
+            </div>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/Carousel/Fortaleza.jpg" class="d-block w-800 imgCarousel" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/Carousel/Alagoas.jpg" class="d-block w-800 imgCarousel" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/Carousel/Pipa-RN.jpg" class="d-block w-800 imgCarousel" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+        <section class="cardsSection">
+            <div class="card primeiroCard" style="width: 18rem;">
+                <img src="img/Cards/Jericoacoara.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Praia de Jericoacoara</h5>
+                  <h5 class="card-title">Jijóca de Jericoacoara - CE</h5>
+                  <p class="card-text">Pacote:</p>
+                  <p class="card-text">Estadia + Alimentação + Passeio Turistico</p>
+                  <p class="card-text">2 Pessoas</p>
+                  <p class="card-text">R$ 500/por dia</p>
+                  <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+            <div class="card segundoCard" style="width: 18rem;">
+                <img src="img/Cards/Praia Brava.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Praia Brava</h5>
+                  <h5 class="card-title">Florianópolis - SC</h5>
+                  <p class="card-text">Pacote:</p>
+                  <p class="card-text">Estadia + Passeio Turistico</p>
+                  <p class="card-text">1 Pessoa</p>
+                  <p class="card-text">R$ 450/por dia</p>
+                  <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+            <div class="card terceiroCard" style="width: 18rem;">
+                <img src="img/Cards/Boa Viagem.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Praia de Boa Viagem</h5>
+                  <h5 class="card-title">Salvador - BA</h5>
+                  <p class="card-text">Pacote:</p>
+                  <p class="card-text">Passagens + Estadia + Alimentação</p>
+                  <p class="card-text">2 Pessoas</p>
+                  <p class="card-text">4 dias</p>
+                  <p class="card-text">R$ 5.500</p>
+                  <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+              </div>
+              <div class="card quartoCard" style="width: 18rem;">
+                <img src="img/Cards/Baía dos porcos.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Praia da Baía dos Porcos</h5>
+                  <h5 class="card-title">Fernando de Noronha - PE</h5>
+                  <p class="card-text">Pacote:</p>
+                  <p class="card-text">Passagens + Estadia + Alimentação + Passeio Turistico</p>
+                  <p class="card-text">3 Pessoas</p>
+                  <p class="card-text">3 dias</p>
+                  <p class="card-text">R$ 4.200</p>
+                  <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+              </div>
+        </section>
+        <section class="montarPacotes">
+            <div class="textodeApoioMontarPacotes">
+                <h2>Tenha uma experiência única!</h2>
+                <p>Além dos pacotes prontos que preparamos, você também tem a oportunidade de montar um pacote do <span class="spanZero">zero</span></p>
+            </div>
+            <form action="" class="formPacote" id="formPacote">
+                <div class="local">
+                    <label for="partida">Partida
+                        <input type="text" name="partida" id="partida" placeholder="Ex: Salvador, BA">
+                    </label>
+                    
+                    <label for="destino">Destino
+                        <input type="text" name="destino" id="destino" placeholder="Ex: São Paulo, SP">
+                    </label>
+                </div>
+                
+                <div class="duracao">
+                    <label for="dataInicio">Inicio
+                        <input type="date" name="inicio" id="inicio">
+                    </label>
+                    
+                    <label for="fim">Fim
+                        <input type="date" name="fim" id="fim">
+                    </label>
+                </div>
+                
+                <div class="info">
+                    <div class="qtPessoas">
+                        <label for="pessoas">Pessoas
+                            <select name="nPessoas" id="nPessoas">
+                                <option value=""></option>
+                                <option value="um">1</option>
+                                <option value="dois">2</option>
+                                <option value="tres">3</option>
+                                <option value="quatro">4</option>
+                                <option value="cinco">5</option>
+                                <option value="seis">6</option>
+                                <option value="sete">7</option>
+                                <option value="oito">8</option>
+                                <option value="nove">9</option>
+                                <option value="dez">10</option>
+                            </select>
+                        </label>
+                    </div>
+                    
+                    <div class="adicionais">
+                        <label for="itensPacote">Passagens
+                            <input type="checkbox" name="Passagens" id="Passagens" class="itensPacote">
+                        </label>
+                        <label for="hospedagem">Hospedagem
+                            <input type="checkbox" name="Hospedagem" id="Hospedagem" class="itensPacote">
+                        </label>
+                        <label for="passeio">Passeio
+                            <input type="checkbox" name="passeio" id="passeio">
+                        </label>
+                    </div>
+                </div>
+                
+            </form>
+        </section>
     </main>
-    
+    <footer>
+        <div class="redesSociais">
+            <a href="">Facebook</a>
+            <a href="">Twitter</a>
+            <a href="">Instagram</a>
+            <a href="">Linkedin</a>
+        </div>
+        <div class="linksUteis">
+            <a href="">Precisa de ajuda?</a>
+            <a href="">Politica de Privacidade</a>
+            <a href="">Trabalhe Conosco</a>
+            <a href="">Quem somos</a>
+        </div>
+        <div class="direitosAutorais">
+            <p>SOLAR</p>
+            <p>&copy; Todos os direitos reservados</p>
+        </div>
+    </footer>
 </body>
 </html>
