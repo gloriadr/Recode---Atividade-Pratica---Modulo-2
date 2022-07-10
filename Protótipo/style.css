@@ -32,11 +32,15 @@ header {
     z-index: 1;
 }
 .logo {
+    height: 100%;
     color: var(--corPrimaria);
     font-family: var(--fontePrimaria);
     font-weight: 900;
     font-size: 2rem;
     cursor: pointer;
+}
+.imgLogo {
+    height: 100%;
 }
 nav {
     height: 100%;
