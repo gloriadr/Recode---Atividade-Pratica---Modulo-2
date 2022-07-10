@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,200;0,300;0,400;0,700;1,100&display=swap');
+:root {
+    --bordaGradiente: linear-gradient(90deg,rgba(255,255,255,1),rgba(227,102,52,89), rgba(255,255,255,1)) 1;
+    --bordaGradienteVerde: linear-gradient(90deg,rgba(255,255,255,1),rgba(52, 227, 199, 89), rgba(255,255,255,1)) 1;
+    --corPrimaria: #E6E216;
+    --corSecundaria: #E36634;
+    --corTerciaria : #E3774B;
+    --corQuartenaria: #34E3C7;
+    --fontePrimaria:'Overpass', sans-serif;
+    --bordas: 1.5px solid 
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fontePrimaria);
+}
+main {
+    margin-top: 200px;
+}
+.containerContato {
+    width: 50%;
+    height: auto;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.containerContato h1 {
+    text-align: center;
+    padding: 10px;
+}
+.emailContato {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}

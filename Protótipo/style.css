@@ -170,12 +170,15 @@ nav {
 .formPacote {
     width: 40%;
     height: auto;
-    padding: 5px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: stretch;
+    border: solid 2px;
+    border-radius: 8px;
+    border-image: var(--bordaGradienteVerde);
 }
 .formPacote input {
     border-radius: 5px;

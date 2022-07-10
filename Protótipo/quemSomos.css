@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,200;0,300;0,400;0,700;1,100&display=swap');
 :root {
     --bordaGradiente: linear-gradient(90deg,rgba(255,255,255,1),rgba(227,102,52,89), rgba(255,255,255,1)) 1;
     --bordaGradienteVerde: linear-gradient(90deg,rgba(255,255,255,1),rgba(52, 227, 199, 89), rgba(255,255,255,1)) 1;
@@ -6,6 +7,8 @@
     --corTerciaria : #E3774B;
     --corQuartenaria: #34E3C7;
     --fontePrimaria:'Overpass', sans-serif;
+    --bordas: 1.5px solid 
+
 }
 * {
     font-family: var(--fontePrimaria);
