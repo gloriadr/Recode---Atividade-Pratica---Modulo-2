@@ -19,9 +19,11 @@
 }
 main {
     margin-top: 200px;
+    display: flex;
+    flex-direction: row;
 }
 .containerContato {
-    width: 50%;
+    width: 40%;
     height: auto;
     margin-bottom: 15px;
     display: flex;
@@ -29,11 +31,19 @@ main {
     justify-content: space-around;
 }
 .containerContato h1 {
+    height: auto;
     text-align: center;
     padding: 10px;
+    color: var(--corSecundaria);
 }
 .emailContato {
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+.emailContato input , textarea {
+    padding: 10px;
+}
+.redesContato {
+    margin-top: 15px;
 }
