@@ -86,7 +86,7 @@ nav {
    justify-content: center;
 }
 .titulo {
-    text-align: center;
+    text-align: cente;
     color: var(--corTerciaria);
 }
 .textoSuporte {
@@ -104,6 +104,15 @@ nav {
 .imgCarousel {
     width: 100%;
     height: 100%;
+}
+.carousel-caption {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.37);
+}
+.carousel-caption h5 {
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.2rem;
 }
 
 /*Cards de praias*/
@@ -229,4 +238,80 @@ footer {
 .iconsRedes {
     width: 20px;
     height: 20px;
+}
+@media (max-width: 900px){
+    .montarPacotes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .carouselSection {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 750px) {
+    .carousel {
+        display: none;
+    }
+    header {
+        height: 300px;
+    }
+    .logo {
+        height: 60%;
+    }
+    nav {
+        height: 20%;
+    }
+    main {
+        margin-top: 400px;
+    }
+    .local {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 600px) {
+    header {
+        position: relative;
+        height: auto;
+    }
+    .navbar-nav{
+        display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+    .formPacote {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .local {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main {
+        margin-top: 100px;
+    }
+}
+@media (max-width: 540) {
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo {
+        width: 100%;
+    }
+    .formPacote {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

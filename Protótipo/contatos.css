@@ -23,7 +23,7 @@ main {
     flex-direction: row;
 }
 .containerContato {
-    width: 40%;
+    width: 100%;
     height: auto;
     margin-bottom: 15px;
     display: flex;
@@ -46,4 +46,38 @@ main {
 }
 .redesContato {
     margin-top: 15px;
+}
+@media (max-width: 900px) {
+
+}
+@media (max-width: 750px) {
+    .containerContato h1 {
+        text-align: justify;
+        width: 100%;
+    }
+    main {
+        width: 100%;
+    }
+    .emailContato  {
+        width: 100%;
+    }
+}
+@media (max-width: 380px) {
+    .containerContato {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .emailContato {
+        width: 100%;
+    }
+    .emailContato input {
+        width: 90%;
+    }
+    .emailContato textarea {
+        align-items: center;
+        width: 90px;
+    }
 }
