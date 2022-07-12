@@ -62,15 +62,17 @@
 .btnCadastrar p {
     margin: 0;
 }
-@media (max-width: 900px) {
-
+@media (max-width: 900) {
+    .containerLogIn {
+        max-width: 70%;
+    }
 }
 @media (max-width: 750px) {
-    
+    header {
+        position: relative;
+    }
+    .containerLogIn {
+        max-width: 90%;
+    }
 }
-@media (max-width: 600px) {
-    
-}
-@media (max-width: 540px) {
-    
-}
+

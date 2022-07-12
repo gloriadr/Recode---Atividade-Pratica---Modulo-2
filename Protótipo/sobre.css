@@ -23,6 +23,7 @@
 }
 .containerSobre {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -70,15 +71,12 @@
 .infoLista ul {
     padding: 0;
 }
-@media (max-width: 900px) {
 
-}
 @media (max-width: 750px) {
-    
-}
-@media (max-width: 600px) {
-    
-}
-@media (max-width: 540px) {
-    
+    header {
+        position: relative;
+    }
+    .logoSobre img {
+        display: none;
+    }
 }
